@@ -15,7 +15,7 @@ export const ListItem = (props: StackProps) => {
   const { children, ...rest } = props;
   return (
     <HStack as="li" spacing="20px" {...rest} alignItems="start">
-      <Icon as={CheckCircleIcon} w="22px" h="22px" color='purple.500' />
+      <Icon as={CheckCircleIcon} w="22px" h="22px" color='purple.600' />
       <Text textAlign={['left', 'left', 'center']}>{children}</Text>
     </HStack>
   );
@@ -39,7 +39,7 @@ export function Pricing() {
           <Text fontSize="24px" fontWeight="800">
             Premium PRO
           </Text>
-          <Heading as="h3" fontSize="60px" mt="16px">
+          <Heading as="h3" fontSize={["5xl", "5xl", "6xl"]} mt="4px">
             $329
           </Heading>
           <Text color="#171923" fontSize="18px" fontWeight="500" mt="8px">

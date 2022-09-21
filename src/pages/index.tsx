@@ -15,11 +15,11 @@ import styles from "../styles/Home.module.css";
 import Header from "../components/Header";
 import { Pricing } from "../components/Pricing";
 import { Features } from "../components/Features";
-import Link from "next/link";
-//className={styles.container}
+
+
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <Header />
       <Pricing />
       <Features />     
